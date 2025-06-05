@@ -2,63 +2,10 @@ import React, { useState } from "react";
 import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
 import clsx from "clsx";
 
-const menuItems = [
-  {
-    title: "GAMES",
-    children: [
-      {
-        title: "AXIE INFINITY: ATIA’S LEGACY",
-        icon: (
-          <img
-            src={"/images/img_bg1_char.png"}
-            alt="atia"
-            className="w-6 h-6"
-          />
-        ),
-        href: "/atia",
-      },
-      {
-        title: "AXIE INFINITY: ORIGINS",
-        icon: (
-          <img
-            src={"/images/img_bg1_char.png"}
-            alt="atia"
-            className="w-6 h-6"
-          />
-        ),
-        href: "/origins",
-      },
-      {
-        title: "AXIE INFINITY: CLASSIC",
-        icon: null,
-        href: "/classic",
-      },
-    ],
-  },
-  {
-    title: "SOCIAL",
-    groups: [
-      {
-        title: "COMMUNITY",
-        icon: <></>,
-        children: [
-          {
-            title: "Twitter",
-            icon: <></>,
-            href: "/twitter",
-          },
-          {
-            title: "Discord",
-            icon: null,
-            href: "/discord",
-          },
-        ],
-      },
-    ],
-  },
-];
 
-const MobileNavbar: React.FC = () => {
+
+const MobileNavbar: React.FC = (props: any) => {
+  const { menuItems } = props;
   const [isOpen, setIsOpen] = useState(false);
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
 
@@ -70,7 +17,7 @@ const MobileNavbar: React.FC = () => {
     <div className="relative z-50">
       {/* Hamburger icon */}
       <div className="flex justify-end">
-        <button onClick={() => setIsOpen(true)} className="p-4 text-white">
+        <button onClick={() => setIsOpen(true)} className="p-4 text-black">
           <Menu size={28} />
         </button>
       </div>

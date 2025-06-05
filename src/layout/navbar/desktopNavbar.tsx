@@ -1,100 +1,5 @@
 import React from "react";
 
-const menuItems = [
-  {
-    title: "GAMES",
-    groups: [
-      {
-        title: "AXIE INFINITY: ATIA’S LEGACY",
-        children: [
-          {
-            title: "AXIE INFINITY: ATIA’S LEGACY",
-            icon: (
-              <img
-                src="/images/img_bg1_char.png"
-                alt="atia"
-                className="w-6 h-6"
-              />
-            ),
-            href: "/atia",
-            tag: "PRE-REGISTER",
-          },
-          {
-            title: "AXIE INFINITY: ORIGINS",
-            icon: (
-              <img
-                src="/images/img_bg1_char.png"
-                alt="origins"
-                className="w-6 h-6"
-              />
-            ),
-            href: "/origins",
-          },
-          {
-            title: "AXIE INFINITY: CLASSIC",
-            icon: null,
-            href: "/classic",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: "SOCIAL",
-    groups: [
-      {
-        title: "COMMUNITY",
-        children: [
-          { title: "Twitter", icon: null, href: "/twitter" },
-          { title: "Discord", icon: null, href: "/discord" },
-          { title: "Youtube", icon: null, href: "/youtube" },
-          { title: "Tiktok", icon: null, href: "/tiktok" },
-        ],
-      },
-      {
-        title: "SUPPORTS",
-        children: [
-          { title: "COMMUNITY SUPPORT", icon: null, href: "/twitter" },
-          { title: "POWDAY WIKI", icon: null, href: "/discord" },
-        ],
-      },
-      {
-        title: "NEWS",
-        children: [{ title: "BLOGS", icon: null, href: "/twitter" }],
-      },
-    ],
-  },
-  {
-    title: "MORE",
-    children: [
-      {
-        title: "WHITEPAPAER",
-        icon: (
-          <img src="/images/img_bg1_char.png" alt="atia" className="w-6 h-6" />
-        ),
-        href: "/atia",
-      },
-      {
-        title: "CODE OF CONDUCT",
-        icon: (
-          <img
-            src="/images/img_bg1_char.png"
-            alt="origins"
-            className="w-6 h-6"
-          />
-        ),
-        href: "/origins",
-      },
-      {
-        title: "PRIVACY POLICY",
-        icon: (
-          <img src="/images/img_bg1_char.png" alt="atia" className="w-6 h-6" />
-        ),
-        href: "/classic",
-      },
-    ],
-  },
-];
 
 const DropdownItem = ({ icon, title, href, tag }: any) => (
   <a
@@ -144,7 +49,8 @@ const DropdownContent = ({ item }: any) => {
   return null;
 };
 
-const Navbar = () => {
+const Navbar = (props: any) => {
+  const { menuItems } = props;
   return (
     <nav className="text-black px-6 py-4 flex gap-8 relative z-40">
       {menuItems?.map((item: any, index) => (
