@@ -1,0 +1,20 @@
+import { GamePlayScreenShot } from "./game-play-screen-shot";
+import { Reclaim } from "./reclaim";
+import { YourFarmStartHere } from "./your-farm-start-here";
+import { CharactersV2 } from "./characters_v2/characters";
+
+export const ScreenShot = () => {
+  return (
+    <section
+      className="relative aspect-[3/7.5] w-full "
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <GamePlayScreenShot />
+      <Reclaim />
+      <YourFarmStartHere />
+
+      <CharactersV2 />
+    </section>
+  );
+};
