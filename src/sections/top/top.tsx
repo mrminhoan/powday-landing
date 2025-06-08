@@ -6,7 +6,7 @@ import { Logo } from "./logo";
 export const Top = () => {
   return (
     <div
-      className="relative top-11 left-0 aspect-[3/4.5] w-full"
+      className="relative top-11 left-0 aspect-[3/4]  w-full "
       data-aos="fade-up"
       data-aos-duration="1000"
     >

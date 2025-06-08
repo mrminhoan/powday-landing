@@ -1,7 +1,7 @@
 export const GameFlow = () => {
   return (
     <div
-      className="relative  aspect-[3/2.5] "
+      className="relative  aspect-[3/2] "
       data-aos="fade-up"
       data-aos-duration="1000"
     >

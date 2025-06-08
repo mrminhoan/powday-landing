@@ -64,7 +64,9 @@ export const CharactersV2 = () => {
 
   return (
     <div
-      className="absolute bottom-[-4%] aspect-[3/2] w-full "
+      // className="absolute bottom-[10%] aspect-[3/1] w-full bg-red-500"
+      className="absolute bottom-[-4%] min-[500px]:bottom-[12%] w-full aspect-[3/1]"
+
       data-aos="fade-up"
       data-aos-duration="1000"
     >

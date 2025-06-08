@@ -17,14 +17,14 @@ function App() {
   }, []);
   return (
     <div className="w-full bg-black ">
-      <div className=" bg-[url('/images/bg_landing_full.png')] bg-cover bg-top min-h-screen w-vw relative">
+      <div className="bg-[url('/images/bg_landing_full.png')] bg-cover bg-top min-h-screen w-vw relative">
         {/* <MobileNavbar /> */}
         <Header />
         <Top />
         <ScreenShot />
-        <GameFlow />
+        {/* <GameFlow />
         <Items />
-        <Footer />
+        <Footer /> */}
       </div>
     </div>
   );

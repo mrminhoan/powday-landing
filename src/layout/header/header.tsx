@@ -101,7 +101,7 @@ const menuItems = [
 export const Header = () => {
   return (
     <>
-      <div className="flex items-center px-10 py-3 bg-[#ffffff] bg-opacity-90 justify-between fixed top-0 left-0 right-0 z-50 text-[#00aae1]">
+      <div className=" flex items-center px-10 py-3 bg-[#ffffff] bg-opacity-90 justify-between fixed top-0 left-0 right-0 z-50 text-[#00aae1]">
         <div className="min-[1000px]:flex items-center justify-between gap-4 w-full hidden ">
           {/* <img src="/images/Logo.png" alt="logo" className="w-[6rem] " /> */}
           <DesktopNavbar menuItems={menuItems} />

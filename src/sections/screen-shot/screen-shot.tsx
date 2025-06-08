@@ -6,7 +6,9 @@ import { CharactersV2 } from "./characters_v2/characters";
 export const ScreenShot = () => {
   return (
     <section
-      className="relative aspect-[3/7.5] w-full "
+      // className="relative aspect-[3/10] w-full"
+      className="relative aspect-[3/10] w-full"
+
       data-aos="fade-up"
       data-aos-duration="1000"
     >

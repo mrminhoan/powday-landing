@@ -6,9 +6,9 @@ const DropdownItem = ({ icon, title, href, tag }: any) => (
     className="flex items-center gap-3 hover:bg-gray-100 px-2 py-1 rounded"
   >
     {icon}
-    <span className="text-sm font-medium">{title}</span>
+    <span className="text-[100%] font-medium">{title}</span>
     {tag && (
-      <span className="bg-orange-400 text-white text-xs px-2 py-0.5 rounded ml-auto">
+      <span className="bg-orange-400 text-white text-[90%] px-2 py-0.5 rounded ml-auto">
         {tag}
       </span>
     )}
@@ -31,7 +31,7 @@ const DropdownContent = ({ item }: any) => {
       <div className="space-y-4">
         {item.groups.map((group: any, gIdx: number) => (
           <div key={gIdx}>
-            <div className="text-gray-500 font-bold uppercase border-b pb-2 text-sm">
+            <div className="font-bold uppercase border-b pb-2 text-[100%]">
               {group.title}
             </div>
             <div className="space-y-2 mt-2">
@@ -51,22 +51,22 @@ const DropdownContent = ({ item }: any) => {
 const Navbar = (props: any) => {
   const { menuItems } = props;
   return (
-    <nav className=" px-6 py-2 flex gap-8 relative z-40 flex-1 flex-row justify-center">
+    <nav className="px-6 py-2 flex gap-8 relative z-40 flex-1 flex-row justify-center">
       {menuItems?.map((item: any, index) => (
         <div className="relative group flex items-center gap-2" key={index}>
-          <button className="text-lg font-semibold uppercase">
+          <button className="text-[120%] font-semibold uppercase">
             {item.title}
           </button>
           {
             (item?.children?.length > 0 || item?.groups?.length > 0) && (
               <div className="group-hover:rotate-180 transition-transform duration-200">
-                <ChevronDown className="w-4 h-4" />
+                <ChevronDown className="w-5 h-5" />
               </div>
             )
           }
 
           {(item.children || item.groups) && (
-            <div className="absolute top-full left-0 mt-2 bg-white  shadow-lg rounded-lg p-4 min-w-[300px] opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-200 z-50 border-2 border-gray-200">
+            <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg p-4 min-w-[300px] opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-200 z-50 border-2 border-gray-200">
               <DropdownContent item={item} />
             </div>
           )}
