@@ -1,5 +1,4 @@
-import React from "react";
-
+import { ChevronDown } from "lucide-react";
 
 const DropdownItem = ({ icon, title, href, tag }: any) => (
   <a
@@ -52,15 +51,22 @@ const DropdownContent = ({ item }: any) => {
 const Navbar = (props: any) => {
   const { menuItems } = props;
   return (
-    <nav className="text-black px-6 py-4 flex gap-8 relative z-40">
+    <nav className=" px-6 py-2 flex gap-8 relative z-40 flex-1 flex-row justify-center">
       {menuItems?.map((item: any, index) => (
-        <div className="relative group" key={index}>
+        <div className="relative group flex items-center gap-2" key={index}>
           <button className="text-lg font-semibold uppercase">
             {item.title}
           </button>
+          {
+            (item?.children?.length > 0 || item?.groups?.length > 0) && (
+              <div className="group-hover:rotate-180 transition-transform duration-200">
+                <ChevronDown className="w-4 h-4" />
+              </div>
+            )
+          }
 
           {(item.children || item.groups) && (
-            <div className="absolute top-full left-0 mt-2 bg-white text-black shadow-lg rounded-lg p-4 min-w-[300px] opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-200 z-50 border-2 border-gray-200">
+            <div className="absolute top-full left-0 mt-2 bg-white  shadow-lg rounded-lg p-4 min-w-[300px] opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-200 z-50 border-2 border-gray-200">
               <DropdownContent item={item} />
             </div>
           )}
