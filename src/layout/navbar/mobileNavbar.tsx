@@ -4,8 +4,8 @@ import clsx from "clsx";
 
 
 
-const MobileNavbar: React.FC = (props: any) => {
-  const { menuItems } = props;
+const MobileNavbar = ({menuItems}: any) => {
+  // const { menuItems } = props;
   const [isOpen, setIsOpen] = useState(false);
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
 
