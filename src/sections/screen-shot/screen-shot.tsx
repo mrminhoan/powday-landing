@@ -7,8 +7,7 @@ export const ScreenShot = () => {
   return (
     <section
       // className="relative aspect-[3/10] w-full"
-      className="relative aspect-[3/10] w-full"
-
+      className="relative aspect-[2/5] w-ful top-[2%]"
       data-aos="fade-up"
       data-aos-duration="1000"
     >

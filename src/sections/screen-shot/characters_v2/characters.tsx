@@ -65,10 +65,9 @@ export const CharactersV2 = () => {
   return (
     <div
       // className="absolute bottom-[10%] aspect-[3/1] w-full bg-red-500"
-      className="absolute bottom-[-4%] min-[500px]:bottom-[12%] w-full aspect-[3/1]"
-
+      className="absolute bottom-[6%] [@media(min-width:500px)]:bottom-[6%] w-full"
       data-aos="fade-up"
-      data-aos-duration="1000"
+      data-aos-duration="500"
     >
       <div className="w-[90%] mx-auto  flex justify-between pt-[10%]">
         <CharactersDesc

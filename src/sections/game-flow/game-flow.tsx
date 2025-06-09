@@ -13,7 +13,7 @@ export const GameFlow = () => {
       <img
         src="/images/img_gameflow.png"
         alt="claim-here"
-        className="absolute w-[85%] top-[20%] left-1/2 -translate-x-1/2"
+        className="absolute w-[75%]  top-[5%] left-1/2 -translate-x-1/2"
         loading="lazy"
       />
     </div>

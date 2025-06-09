@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
 import clsx from "clsx";
 
-
-
 const MobileNavbar = ({ menuItems }: any) => {
   // const { menuItems } = props;
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +15,7 @@ const MobileNavbar = ({ menuItems }: any) => {
     <div className="relative z-50">
       {/* Hamburger icon */}
       <div className="flex justify-end">
-        <button onClick={() => setIsOpen(true)} className="px-4 py-2">
+        <button onClick={() => setIsOpen(true)} className="py-2">
           <Menu size={20} />
         </button>
       </div>

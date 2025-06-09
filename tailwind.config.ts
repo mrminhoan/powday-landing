@@ -6,7 +6,14 @@ const config: Config = {
     "./src/**/*.{js,ts,jsx,tsx}", // <- hỗ trợ đầy đủ tsx
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "var(--primary)",
+      },
+      screens: {
+        "min-500": "500px",
+      },
+    },
     container: {
       center: true,
       padding: "16px",

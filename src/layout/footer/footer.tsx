@@ -1,15 +1,17 @@
 const Footer = () => {
   return (
-    <footer className="bg-[#ffffff] text-black py-6 px-6 md:px-16 ">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 justify-between">
+    <footer className="bg-[#ffffff] text-black py-6 px-6 md:px-16">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 [@media(min-width:1024px)]:grid-cols-2 gap-8 justify-between">
         <div>
-          <img src="/images/Logo.png" alt="logo" className="min-[800px]:w-[70%] w-[40%]  min-[1000px]:w-[50%]" />
-          {/* <h1 className="text-2xl font-bold mb-4">Axie Infinity</h1> */}
+          <img
+            src="/images/Logo.png"
+            alt="logo"
+            className="min-[1024px]:w-[40%] w-[20%]"
+          />
         </div>
 
-
         <div className="grid grid-cols-2 gap-8">
-          {/* Ecosystem + about*/}
+          {/* Ecosystem + about */}
           <div className="flex flex-col gap-8">
             <div>
               <h2 className="text-sm text-gray-400 font-semibold mb-2">
@@ -17,71 +19,73 @@ const Footer = () => {
               </h2>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="link-underline-hover">
                     App.Powday
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="link-underline-hover">
                     Games
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="link-underline-hover">
                     Powday Wiki
                   </a>
                 </li>
                 <li>
-                  <a href="https://the-powday.gitbook.io/the-powday" className="hover:underline">
+                  <a
+                    href="https://the-powday.gitbook.io/the-powday"
+                    className="link-underline-hover"
+                  >
                     Whitepaper
                   </a>
                 </li>
               </ul>
             </div>
 
-            {/* About */}
             <div>
-              <h2 className="text-sm text-gray-400 font-semibold mb-2">ABOUT</h2>
+              <h2 className="text-sm text-gray-400 font-semibold mb-2">
+                ABOUT
+              </h2>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="link-underline-hover">
                     Sky Mavis
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="link-underline-hover">
                     Careers
                   </a>
                 </li>
               </ul>
             </div>
-
           </div>
 
           {/* Other + Social */}
           <div className="flex flex-col gap-8">
             <div>
-              <h2 className="text-sm text-gray-400 font-semibold mb-2">OTHER</h2>
+              <h2 className="text-sm text-gray-400 font-semibold mb-2">
+                OTHER
+              </h2>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="link-underline-hover">
                     Code of Conduct
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="link-underline-hover">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="link-underline-hover">
                     Terms of Use
                   </a>
                 </li>
               </ul>
-            </div>
-            <div>
-
             </div>
 
             <div>
@@ -89,18 +93,42 @@ const Footer = () => {
                 SOCIAL MEDIA
               </h2>
               <div className="flex space-x-4 text-xl">
-                <a href="#" aria-label="Discord">
-                  🕹️
+                <a
+                  href="#"
+                  className="link-underline-hover"
+                  aria-label="Discord"
+                >
+                  <img
+                    src="/images/discord.svg"
+                    alt="Discord"
+                    className="w-6 h-6"
+                  />
                 </a>
-                <a href="#" aria-label="X">
-                  ❌
+                <a href="#" className="link-underline-hover" aria-label="X">
+                  <img
+                    src="/images/tele.svg"
+                    alt="telegram"
+                    className="w-6 h-6"
+                  />
                 </a>
-                <a href="#" aria-label="YouTube">
-                  📺
+                <a
+                  href="#"
+                  className="link-underline-hover"
+                  aria-label="YouTube"
+                >
+                  <img
+                    src="/images/youtube.svg"
+                    alt="youtube"
+                    className="w-6 h-6"
+                  />
                 </a>
-                <a href="#" aria-label="TikTok">
+                {/* <a
+                  href="#"
+                  className="link-underline-hover"
+                  aria-label="TikTok"
+                >
                   🎵
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
