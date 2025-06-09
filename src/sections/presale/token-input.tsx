@@ -112,7 +112,8 @@ const TokenConverter = () => {
           />
         </div>
         <div className="flex-1 bg-gray-100 rounded-full px-4 py-2 flex items-center text-black">
-          <span className="mr-2">🌀</span>
+          {/* <span className="mr-2"></span> */}
+          <img src={"/images/ui_icon_coin_E.png"} className="w-6 h-6" />
           <input
             type="text"
             value={tokenValue}
