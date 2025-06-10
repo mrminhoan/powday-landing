@@ -73,16 +73,20 @@ const MobileNavbar = ({ menuItems }: any) => {
                           : "max-h-0 opacity-0"
                       )}
                     >
-                      {item.children.map((child) => (
-                        <a
-                          key={child.title}
-                          href={child.href}
-                          className="flex items-center gap-2 text-sm  hover:text-black  font-semibold text-[#00aae1]"
-                        >
-                          {child.icon && child.icon}
-                          {child.title}
-                        </a>
-                      ))}
+                      {item.children.map((child) => {
+                        return (
+                          <a
+                            key={child.title}
+                            href={child.href}
+                            className="flex items-center gap-2 text-sm  hover:text-black  font-semibold text-[#00aae1]"
+                            target={child?.target}
+                            rel="noopener noreferrer"
+                          >
+                            {child.icon && child.icon}
+                            {child.title}
+                          </a>
+                        );
+                      })}
                     </div>
                   )}
 
@@ -107,6 +111,7 @@ const MobileNavbar = ({ menuItems }: any) => {
                                 key={child.title}
                                 href={child.href}
                                 className="flex items-center gap-2 text-sm  font-semibold hover:text-black text-[#00aae1]"
+                                target={child?.target}
                               >
                                 {child.icon && child.icon}
                                 {child.title}

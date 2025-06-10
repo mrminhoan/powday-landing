@@ -37,6 +37,8 @@ const Footer = () => {
                   <a
                     href="https://the-powday.gitbook.io/the-powday"
                     className="link-underline-hover"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Whitepaper
                   </a>

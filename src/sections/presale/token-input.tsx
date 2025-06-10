@@ -70,7 +70,7 @@ const TokenConverter = () => {
     <div className="max-w-md mx-auto p-4 bg-gray-900 text-white rounded-xl space-y-4">
       {/* Token Tabs */}
       <div className="flex justify-between gap-2">
-        <div className="flex justify-between gap-2 w-full">
+        <div className="flex flex-col md:flex-row justify-between gap-2 w-full">
           {tokens.map((token) => (
             <button
               key={token.value}
@@ -86,9 +86,9 @@ const TokenConverter = () => {
               }}
             >
               {token?.icon && (
-                <img src={token.icon} alt={token.label} className="w-6 h-6" />
+                <img src={token.icon} alt={token.label} className="w-4 h-4 sm:w-6 sm:h-6" />
               )}
-              <span>{token.value}</span>
+              <span className="text-sm sm:text-base">{token.value}</span>
             </button>
           ))}
         </div>
@@ -96,7 +96,7 @@ const TokenConverter = () => {
 
       {/* Input Fields */}
       <div className="flex gap-2">
-        <div className="flex-1 bg-gray-100 rounded-full px-4 py-2 flex items-center text-black">
+        <div className="flex-1 bg-gray-100 rounded-md px-4 py-2 flex items-center text-black">
           {/* <span className="mr-2 text-gray-500">{selectedToken.label}</span> */}
           <img
             src={selectedToken.icon}
@@ -111,7 +111,7 @@ const TokenConverter = () => {
             placeholder="0.00"
           />
         </div>
-        <div className="flex-1 bg-gray-100 rounded-full px-4 py-2 flex items-center text-black">
+        <div className="flex-1 bg-gray-100 rounded-md px-4 py-2 flex items-center text-black">
           {/* <span className="mr-2"></span> */}
           <img src={"/images/ui_icon_coin_E.png"} className="w-6 h-6" />
           <input
@@ -119,7 +119,7 @@ const TokenConverter = () => {
             value={tokenValue}
             onChange={handleTokenChange}
             className="bg-transparent outline-none w-full text-right"
-            placeholder="0.0000"
+            placeholder="0.00"
           />
         </div>
       </div>

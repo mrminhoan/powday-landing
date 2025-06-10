@@ -25,8 +25,9 @@ const PresaleCard = () => {
 
       {/* Raised and Remaining */}
       <div className="bg-gray-100 mt-6 p-4 rounded-md flex justify-between items-center">
-        <span className="text-lg font-bold text-gray-800">
-          ${"8656.02"} <span className="text-sm font-normal">Raised</span>
+        <span className="text-lg font-bold text-gray-800 flex flex-col">
+          <span>${"8656.02"}</span>
+          <span className="text-sm">Raised</span>
         </span>
         <div className="flex flex-col items-end">
           <span className="text-sm text-black font-semibold">
@@ -54,7 +55,7 @@ const PresaleCard = () => {
       {/* Connect Wallet Button */}
       <button
         onClick={() => setShowWalletModal(true)}
-        className="mt-6 w-full bg-gradient-to-r from-[#39c8f2] to-[#6f86ff] text-white shadow-lg hover:opacity-90 transition-all py-2 rounded-full font-semibold text-white flex items-center justify-center gap-2"
+        className="mt-6 w-full bg-gradient-to-r from-[#39c8f2] to-[#6f86ff] text-white shadow-lg hover:opacity-90 transition-all py-2 rounded-md font-semibold flex items-center justify-center gap-2"
       >
         <span role="img" aria-label="wallet">
           👛

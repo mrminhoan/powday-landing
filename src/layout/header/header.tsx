@@ -75,6 +75,7 @@ const menuItems = [
           <img src="/images/img_bg1_char.png" alt="atia" className="w-6 h-6" />
         ),
         href: "https://the-powday.gitbook.io/the-powday",
+        target: "_blank",
       },
       {
         title: "CODE OF CONDUCT",
