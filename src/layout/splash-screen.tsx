@@ -30,7 +30,7 @@ const SplashScreen = ({ onFinish }: { onFinish: () => void }) => {
       <img
         src="/images/Logo.png"
         alt="Game Logo"
-        className={`mb-10 transition-opacity duration-500 w-[40%] ${
+        className={`mb-10 transition-opacity duration-500 w-[90%] sm:w-[60%] ${
           fadeOut ? "opacity-0" : "opacity-100"
         }`}
       />

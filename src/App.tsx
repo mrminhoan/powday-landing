@@ -19,13 +19,15 @@ function App() {
 
   return (
     <>
+      <div className="bg-[#11ddfb]  px-5 flex items-center justify-end h-fit">
+        <Header />
+      </div>
       <div
       // className={`w-full bg-black transition-opacity duration-700 ${
       //   splashDone ? "opacity-100" : "opacity-0"
       // }`}
       >
         <div className="bg-[url('/images/bg_landing_full.png')] bg-cover bg-top min-h-screen aspect-[1/6] relative">
-          <Header />
           <Top />
           <ScreenShot />
           <GameFlow />

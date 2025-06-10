@@ -3,7 +3,7 @@ import "./loading.scss";
 export const LoadingText = () => {
   return (
     <section>
-      <div className="loading loading07">
+      <div className="loading loading07 text-2xl">
         <span data-text="L">L</span>
         &nbsp;
         <span data-text="O">O</span>
